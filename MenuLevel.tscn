@@ -1,0 +1,941 @@
+[gd_scene load_steps=142 format=2]
+
+[ext_resource path="res://ItemListLevel.gd" type="Script" id=1]
+[ext_resource path="res://level/level1/Musuh.tscn" type="PackedScene" id=2]
+[ext_resource path="res://level/level1/TilesetPadat.tres" type="TileSet" id=3]
+[ext_resource path="res://assets/Palm Tree Island/Background/Big Clouds.png" type="Texture" id=4]
+[ext_resource path="res://assets/Palm Tree Island/Background/Additional Sky.png" type="Texture" id=5]
+[ext_resource path="res://assets/Palm Tree Island/Background/BG Image.png" type="Texture" id=6]
+[ext_resource path="res://apple_casual.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/2.png" type="Texture" id=8]
+[ext_resource path="res://assets/Wood and Paper UI/Yellow Button/1.png" type="Texture" id=9]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://assets/Wood and Paper UI/Yellow Paper/16.png" type="Texture" id=11]
+[ext_resource path="res://PanelLevel.gd" type="Script" id=12]
+[ext_resource path="res://assets/Sound/TapBg.wav" type="AudioStream" id=13]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 96, 96 )
+margin_left = 13.264
+margin_right = 13.6225
+margin_top = 26.8864
+margin_bottom = 15.4149
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 7 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 11 )
+region_rect = Rect2( 52.0291, 18.9652, 0.407814, 0 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 11 )
+region_rect = Rect2( 8.8009, 9.41273, 14.0696, 13.1037 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 11 )
+region_rect = Rect2( 9.15354, 8.97572, 13.8111, 14.1524 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 11 )
+region_rect = Rect2( 9.15354, 9.32537, 13.4118, 13.5016 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 11 )
+region_rect = Rect2( 9.91295, 9.76765, 12.4265, 12.2444 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 7 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=16]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=17]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=19]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=21]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=24]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=25]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=27]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=28]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=30]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=31]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=32]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=33]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=34]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=35]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=36]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=37]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=38]
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=39]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=40]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=41]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=42]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=43]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=44]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=45]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=46]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=47]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=48]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=49]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=50]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=51]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=52]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=53]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=54]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=55]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=56]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=57]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=58]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=59]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=60]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=61]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=62]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=63]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=64]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=65]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=66]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=67]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=68]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=69]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=70]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=71]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=72]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=73]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=74]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=75]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=76]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=77]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=78]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=79]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=80]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=81]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=82]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=83]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=84]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=85]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=86]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=87]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=88]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=89]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=90]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=91]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=92]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=93]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=94]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=95]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=96]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=97]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=98]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=99]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=100]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=101]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=102]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=103]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=104]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=105]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=106]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=107]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=108]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=109]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=110]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=111]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=112]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=113]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=114]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=115]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=116]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=117]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=118]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=119]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=120]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=121]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=122]
+size = 14
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxTexture" id=123]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=124]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=125]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=126]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=127]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="DynamicFont" id=128]
+size = 14
+font_data = ExtResource( 10 )
+
+[node name="levels" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 2
+collision_mask = 4
+format = 1
+tile_data = PoolIntArray( -1, 4, 0, -65536, 4, 0, -65535, 4, 0, -65534, 4, 0, -65533, 4, 0, -65532, 4, 0, -65531, 4, 0, -65530, 4, 0, 65535, 4, 0, 0, 15, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 8, 0, 131071, 4, 0, 65536, 5, 0, 196607, 4, 0, 131072, 5, 0, 131077, 12, 0, 131078, 13, 0, 131079, 13, 0, 131080, 14, 0, 262143, 4, 0, 196608, 5, 0, 327679, 4, 0, 262144, 5, 0, 262154, 0, 0, 393215, 4, 0, 327680, 5, 0, 327687, 0, 0, 327688, 1, 0, 327689, 1, 0, 458751, 4, 0, 393216, 5, 0, 393223, 3, 0, 393224, 4, 0, 393225, 4, 0, 524287, 4, 0, 458752, 17, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 18, 0, 458760, 4, 0, 458761, 4, 0 )
+
+[node name="BG Image" type="Sprite" parent="."]
+position = Vector2( 160, 160 )
+scale = Vector2( 0.833333, 1 )
+z_index = -1
+texture = ExtResource( 6 )
+
+[node name="Additional Sky" type="Sprite" parent="."]
+position = Vector2( 160, 48 )
+scale = Vector2( 10, 3 )
+z_index = -1
+texture = ExtResource( 5 )
+
+[node name="Big Clouds" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.509804 )
+position = Vector2( 224.794, 72 )
+z_index = -1
+texture = ExtResource( 4 )
+
+[node name="Musuh" parent="." instance=ExtResource( 2 )]
+position = Vector2( 192, 48 )
+arah = -1
+
+[node name="Musuh2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 256, 144 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+margin_left = 1.0
+margin_right = 320.0
+margin_bottom = 211.0
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+margin_left = 142.0
+margin_top = 23.0
+margin_right = 180.0
+margin_bottom = 41.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel"]
+margin_left = 289.236
+margin_top = 18.0
+margin_right = 303.236
+margin_bottom = 35.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/Panel"]
+stream = ExtResource( 13 )
+
+[node name="levels" type="ItemList" parent="CanvasLayer"]
+margin_left = 40.0834
+margin_top = 43.875
+margin_right = 278.083
+margin_bottom = 183.875
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="CanvasLayer/levels"]
+margin_left = 7.41624
+margin_top = 5.03246
+margin_right = 27.4162
+margin_bottom = 25.0325
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/focus = SubResource( 11 )
+custom_styles/disabled = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+custom_fonts/font = SubResource( 14 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="CanvasLayer/levels"]
+margin_left = 45.0
+margin_top = 5.0
+margin_right = 65.0
+margin_bottom = 25.0
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/focus = SubResource( 17 )
+custom_styles/disabled = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="CanvasLayer/levels"]
+margin_left = 83.0
+margin_top = 5.0
+margin_right = 102.0
+margin_bottom = 25.0
+custom_styles/hover = SubResource( 21 )
+custom_styles/pressed = SubResource( 22 )
+custom_styles/focus = SubResource( 23 )
+custom_styles/disabled = SubResource( 24 )
+custom_styles/normal = SubResource( 25 )
+custom_fonts/font = SubResource( 26 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="CanvasLayer/levels"]
+margin_left = 123.0
+margin_top = 5.0
+margin_right = 142.0
+margin_bottom = 25.0
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 28 )
+custom_styles/focus = SubResource( 29 )
+custom_styles/disabled = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+custom_fonts/font = SubResource( 32 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="CanvasLayer/levels"]
+margin_left = 159.0
+margin_top = 5.0
+margin_right = 179.0
+margin_bottom = 25.0
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
+custom_fonts/font = SubResource( 38 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+
+[node name="Button6" type="Button" parent="CanvasLayer/levels"]
+margin_left = 198.0
+margin_top = 5.0
+margin_right = 218.0
+margin_bottom = 25.0
+custom_styles/hover = SubResource( 39 )
+custom_styles/pressed = SubResource( 40 )
+custom_styles/focus = SubResource( 41 )
+custom_styles/disabled = SubResource( 42 )
+custom_styles/normal = SubResource( 43 )
+custom_fonts/font = SubResource( 44 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "6"
+
+[node name="Button7" type="Button" parent="CanvasLayer/levels"]
+margin_left = 7.0
+margin_top = 41.0
+margin_right = 27.0
+margin_bottom = 61.0
+custom_styles/hover = SubResource( 45 )
+custom_styles/pressed = SubResource( 46 )
+custom_styles/focus = SubResource( 47 )
+custom_styles/disabled = SubResource( 48 )
+custom_styles/normal = SubResource( 49 )
+custom_fonts/font = SubResource( 50 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "7"
+
+[node name="Button8" type="Button" parent="CanvasLayer/levels"]
+margin_left = 45.0
+margin_top = 41.0
+margin_right = 65.0
+margin_bottom = 61.0
+custom_styles/hover = SubResource( 51 )
+custom_styles/pressed = SubResource( 52 )
+custom_styles/focus = SubResource( 53 )
+custom_styles/disabled = SubResource( 54 )
+custom_styles/normal = SubResource( 55 )
+custom_fonts/font = SubResource( 56 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+
+[node name="Button9" type="Button" parent="CanvasLayer/levels"]
+margin_left = 83.0
+margin_top = 41.0
+margin_right = 102.0
+margin_bottom = 61.0
+custom_styles/hover = SubResource( 57 )
+custom_styles/pressed = SubResource( 58 )
+custom_styles/focus = SubResource( 59 )
+custom_styles/disabled = SubResource( 60 )
+custom_styles/normal = SubResource( 61 )
+custom_fonts/font = SubResource( 62 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "9"
+
+[node name="Button10" type="Button" parent="CanvasLayer/levels"]
+margin_left = 122.0
+margin_top = 41.0
+margin_right = 142.0
+margin_bottom = 61.0
+custom_styles/hover = SubResource( 63 )
+custom_styles/pressed = SubResource( 64 )
+custom_styles/focus = SubResource( 65 )
+custom_styles/disabled = SubResource( 66 )
+custom_styles/normal = SubResource( 67 )
+custom_fonts/font = SubResource( 68 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "10"
+
+[node name="Button11" type="Button" parent="CanvasLayer/levels"]
+margin_left = 159.0
+margin_top = 41.0
+margin_right = 179.0
+margin_bottom = 61.0
+custom_styles/hover = SubResource( 69 )
+custom_styles/pressed = SubResource( 70 )
+custom_styles/focus = SubResource( 71 )
+custom_styles/disabled = SubResource( 72 )
+custom_styles/normal = SubResource( 73 )
+custom_fonts/font = SubResource( 74 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "11"
+
+[node name="Button12" type="Button" parent="CanvasLayer/levels"]
+margin_left = 198.0
+margin_top = 41.0
+margin_right = 218.0
+margin_bottom = 61.0
+custom_styles/hover = SubResource( 75 )
+custom_styles/pressed = SubResource( 76 )
+custom_styles/focus = SubResource( 77 )
+custom_styles/disabled = SubResource( 78 )
+custom_styles/normal = SubResource( 79 )
+custom_fonts/font = SubResource( 80 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "12"
+
+[node name="Button13" type="Button" parent="CanvasLayer/levels"]
+margin_left = 7.0
+margin_top = 78.0
+margin_right = 27.0
+margin_bottom = 98.0
+custom_styles/hover = SubResource( 81 )
+custom_styles/pressed = SubResource( 82 )
+custom_styles/focus = SubResource( 83 )
+custom_styles/disabled = SubResource( 84 )
+custom_styles/normal = SubResource( 85 )
+custom_fonts/font = SubResource( 86 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "13"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button14" type="Button" parent="CanvasLayer/levels"]
+margin_left = 45.0
+margin_top = 78.0
+margin_right = 65.0
+margin_bottom = 98.0
+custom_styles/hover = SubResource( 87 )
+custom_styles/pressed = SubResource( 88 )
+custom_styles/focus = SubResource( 89 )
+custom_styles/disabled = SubResource( 90 )
+custom_styles/normal = SubResource( 91 )
+custom_fonts/font = SubResource( 92 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "14"
+
+[node name="Button15" type="Button" parent="CanvasLayer/levels"]
+margin_left = 83.0
+margin_top = 78.0
+margin_right = 103.0
+margin_bottom = 98.0
+custom_styles/hover = SubResource( 93 )
+custom_styles/pressed = SubResource( 94 )
+custom_styles/focus = SubResource( 95 )
+custom_styles/disabled = SubResource( 96 )
+custom_styles/normal = SubResource( 97 )
+custom_fonts/font = SubResource( 98 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+
+[node name="Button16" type="Button" parent="CanvasLayer/levels"]
+margin_left = 122.125
+margin_top = 78.0
+margin_right = 142.125
+margin_bottom = 98.0
+custom_styles/hover = SubResource( 99 )
+custom_styles/pressed = SubResource( 100 )
+custom_styles/focus = SubResource( 101 )
+custom_styles/disabled = SubResource( 102 )
+custom_styles/normal = SubResource( 103 )
+custom_fonts/font = SubResource( 104 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "16"
+
+[node name="Button17" type="Button" parent="CanvasLayer/levels"]
+margin_left = 159.0
+margin_top = 78.0
+margin_right = 179.0
+margin_bottom = 98.0
+custom_styles/hover = SubResource( 105 )
+custom_styles/pressed = SubResource( 106 )
+custom_styles/focus = SubResource( 107 )
+custom_styles/disabled = SubResource( 108 )
+custom_styles/normal = SubResource( 109 )
+custom_fonts/font = SubResource( 110 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "17"
+
+[node name="Button18" type="Button" parent="CanvasLayer/levels"]
+margin_left = 198.0
+margin_top = 78.0
+margin_right = 218.0
+margin_bottom = 98.0
+custom_styles/hover = SubResource( 111 )
+custom_styles/pressed = SubResource( 112 )
+custom_styles/focus = SubResource( 113 )
+custom_styles/disabled = SubResource( 114 )
+custom_styles/normal = SubResource( 115 )
+custom_fonts/font = SubResource( 116 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "18"
+
+[node name="Button19" type="Button" parent="CanvasLayer/levels"]
+margin_left = 7.0
+margin_top = 112.0
+margin_right = 27.0
+margin_bottom = 132.0
+custom_styles/hover = SubResource( 117 )
+custom_styles/pressed = SubResource( 118 )
+custom_styles/focus = SubResource( 119 )
+custom_styles/disabled = SubResource( 120 )
+custom_styles/normal = SubResource( 121 )
+custom_fonts/font = SubResource( 122 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "19"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button20" type="Button" parent="CanvasLayer/levels"]
+margin_left = 45.0
+margin_top = 112.0
+margin_right = 66.0
+margin_bottom = 132.0
+custom_styles/hover = SubResource( 123 )
+custom_styles/pressed = SubResource( 124 )
+custom_styles/focus = SubResource( 125 )
+custom_styles/disabled = SubResource( 126 )
+custom_styles/normal = SubResource( 127 )
+custom_fonts/font = SubResource( 128 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "20"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/levels"]
+stream = ExtResource( 13 )
+[connection signal="pressed" from="CanvasLayer/Panel/Button" to="CanvasLayer/Panel" method="_on_Button_pressed"]
+[connection signal="item_selected" from="CanvasLayer/levels" to="." method="_on_levels_item_selected"]
+[connection signal="pressed" from="CanvasLayer/levels/Button1" to="CanvasLayer/levels" method="_on_Button1_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button2" to="CanvasLayer/levels" method="_on_Button2_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button3" to="CanvasLayer/levels" method="_on_Button3_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button4" to="CanvasLayer/levels" method="_on_Button4_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button5" to="CanvasLayer/levels" method="_on_Button5_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button6" to="CanvasLayer/levels" method="_on_Button6_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button7" to="CanvasLayer/levels" method="_on_Button7_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button8" to="CanvasLayer/levels" method="_on_Button8_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button9" to="CanvasLayer/levels" method="_on_Button9_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button10" to="CanvasLayer/levels" method="_on_Button10_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button11" to="CanvasLayer/levels" method="_on_Button11_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button12" to="CanvasLayer/levels" method="_on_Button12_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button13" to="CanvasLayer/levels" method="_on_Button13_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button14" to="CanvasLayer/levels" method="_on_Button14_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button15" to="CanvasLayer/levels" method="_on_Button15_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button16" to="CanvasLayer/levels" method="_on_Button16_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button17" to="CanvasLayer/levels" method="_on_Button17_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button18" to="CanvasLayer/levels" method="_on_Button18_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button19" to="CanvasLayer/levels" method="_on_Button19_pressed"]
+[connection signal="pressed" from="CanvasLayer/levels/Button20" to="CanvasLayer/levels" method="_on_Button20_pressed"]

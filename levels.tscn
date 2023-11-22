@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://levels.gd" type="Script" id=1]
+
+[node name="levels" type="Control"]
+margin_right = 320.0
+margin_bottom = 237.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="levels" type="GridContainer" parent="CanvasLayer"]
+margin_left = 118.0
+margin_top = 94.0
+margin_right = 162.0
+margin_bottom = 134.0
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="Button" parent="CanvasLayer/levels"]
+margin_right = 20.0
+margin_bottom = 20.0
+text = "1"
+
+[node name="2" type="Button" parent="CanvasLayer/levels"]
+margin_left = 24.0
+margin_right = 44.0
+margin_bottom = 20.0
+text = "2"
+[connection signal="pressed" from="CanvasLayer/levels/1" to="." method="_on_1_pressed"]

@@ -1,0 +1,1210 @@
+[gd_scene load_steps=91 format=2]
+
+[ext_resource path="res://level/level1/TilesetPadat.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Fire/2.png" type="Texture" id=2]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" type="Texture" id=3]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 03.png" type="Texture" id=4]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 01.png" type="Texture" id=5]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 02.png" type="Texture" id=6]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 03.png" type="Texture" id=7]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 02.png" type="Texture" id=8]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" type="Texture" id=9]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" type="Texture" id=10]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" type="Texture" id=11]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 03.png" type="Texture" id=12]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 04.png" type="Texture" id=13]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 04.png" type="Texture" id=14]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 01.png" type="Texture" id=15]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/04-Fall/Fall 01.png" type="Texture" id=16]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 02.png" type="Texture" id=17]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 06.png" type="Texture" id=18]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 05.png" type="Texture" id=19]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 01.png" type="Texture" id=20]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" type="Texture" id=21]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Fire/6.png" type="Texture" id=22]
+[ext_resource path="res://level/level1/TilesetTembus.tres" type="TileSet" id=23]
+[ext_resource path="res://assets/Palm Tree Island/Background/BG Image.png" type="Texture" id=24]
+[ext_resource path="res://assets/Palm Tree Island/Background/Additional Sky.png" type="Texture" id=25]
+[ext_resource path="res://assets/Palm Tree Island/Background/Additional Water.png" type="Texture" id=26]
+[ext_resource path="res://assets/Palm Tree Island/Background/Big Clouds.png" type="Texture" id=27]
+[ext_resource path="res://assets/Palm Tree Island/Background/Small Cloud 1.png" type="Texture" id=28]
+[ext_resource path="res://level/level1/Koin.tscn" type="PackedScene" id=29]
+[ext_resource path="res://level/level1/Musuh.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/Wood and Paper UI/Life Bars/Big Bars/1.png" type="Texture" id=31]
+[ext_resource path="res://assets/Wood and Paper UI/Life Bars/Big Bars/4.png" type="Texture" id=32]
+[ext_resource path="res://assets/Wood and Paper UI/Life Bars/Colors/1.png" type="Texture" id=33]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 01.png" type="Texture" id=34]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 02.png" type="Texture" id=35]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 04.png" type="Texture" id=36]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 03.png" type="Texture" id=37]
+[ext_resource path="res://assets/Pirate Treasure/Gold Coin/01.png" type="Texture" id=38]
+[ext_resource path="res://assets/Wood and Paper UI/Small Banner/1.png" type="Texture" id=39]
+[ext_resource path="res://assets/Wood and Paper UI/Small Banner/13.png" type="Texture" id=40]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=41]
+[ext_resource path="res://TombolPopup.tres" type="StyleBox" id=42]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/6.png" type="Texture" id=43]
+[ext_resource path="res://TombolFont.tres" type="DynamicFont" id=44]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Fire/4.png" type="Texture" id=45]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Fire/1.png" type="Texture" id=46]
+[ext_resource path="res://assets/Sound/CoinBg.wav" type="AudioStream" id=47]
+[ext_resource path="res://assets/Sound/highUp.wav" type="AudioStream" id=48]
+[ext_resource path="res://assets/Sound/LoseBg.wav" type="AudioStream" id=49]
+[ext_resource path="res://assets/Sound/WinBg.wav" type="AudioStream" id=50]
+[ext_resource path="res://assets/Sound/MusuhHit.wav" type="AudioStream" id=51]
+[ext_resource path="res://assets/Sound/HitMusuh.wav" type="AudioStream" id=52]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Fire/5.png" type="Texture" id=53]
+[ext_resource path="res://assets/Sound/ShotBg.wav" type="AudioStream" id=54]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Idle/1.png" type="Texture" id=55]
+[ext_resource path="res://assets/Shooter Traps/Cannon/Cannon Fire/3.png" type="Texture" id=56]
+[ext_resource path="res://level/Meriam.gd" type="Script" id=57]
+[ext_resource path="res://level/level14/PopupKalah.gd" type="Script" id=58]
+[ext_resource path="res://level/level14/Level14.gd" type="Script" id=59]
+[ext_resource path="res://level/level14/Hero.gd" type="Script" id=60]
+[ext_resource path="res://level/level14/PopupMenang.gd" type="Script" id=61]
+[ext_resource path="res://level/level1/PopupPause.gd" type="Script" id=62]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 8 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "Lompat",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "Terluka",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 17 ), ExtResource( 4 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Lari",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "LariCepat",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 3 ), ExtResource( 10 ), ExtResource( 21 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Diam",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": false,
+"name": "Jatuh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "Mati",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1142.09, 22 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 10
+font_data = ExtResource( 41 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 12
+extra_spacing_bottom = 6
+font_data = ExtResource( 41 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 12
+extra_spacing_bottom = 6
+font_data = ExtResource( 41 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 15, 11 )
+
+[sub_resource type="Animation" id=8]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 55 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 46 ), ExtResource( 2 ), ExtResource( 56 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 22 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "tembak"
+} ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "Diam"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "Tembak"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=12]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=13]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachine" id=14]
+states/Diam/node = SubResource( 10 )
+states/Diam/position = Vector2( 180.333, 28.3333 )
+states/Tembak/node = SubResource( 11 )
+states/Tembak/position = Vector2( 432.333, 28.6296 )
+transitions = [ "Diam", "Tembak", SubResource( 12 ), "Tembak", "Diam", SubResource( 13 ) ]
+start_node = "Diam"
+graph_offset = Vector2( -221, -88 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=15]
+
+[sub_resource type="Animation" id=16]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 55 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 46 ), ExtResource( 2 ), ExtResource( 56 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 22 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "tembak"
+} ]
+}
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=18]
+
+[sub_resource type="Animation" id=19]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 55 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 46 ), ExtResource( 2 ), ExtResource( 56 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 22 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "tembak"
+} ]
+}
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=21]
+
+[sub_resource type="Animation" id=22]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 55 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 46 ), ExtResource( 2 ), ExtResource( 56 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 22 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "tembak"
+} ]
+}
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=24]
+
+[sub_resource type="RectangleShape2D" id=25]
+extents = Vector2( 48.4405, 15.1905 )
+
+[sub_resource type="Animation" id=26]
+length = 8.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400.77, 78.235 ), Vector2( 497.256, 78.3882 ) ]
+}
+
+[sub_resource type="Animation" id=27]
+length = 8.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400.77, 78.235 ), Vector2( 497.256, 78.3882 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+length = 7.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1199.2, 78.9562 ), Vector2( 1198.76, 194.328 ) ]
+}
+
+[node name="Level14" type="Node2D"]
+position = Vector2( -1, 0 )
+script = ExtResource( 59 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 63.2929 ],
+"_edit_vertical_guides_": [ 351.491, 544.259, 1150.25, 1246.78, 1885.07, 1727.92 ]
+}
+
+[node name="TileMapPadat" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 2
+collision_mask = 5
+format = 1
+tile_data = PoolIntArray( -65538, 4, 0, -65537, 4, 0, -131072, 4, 0, -131071, 4, 0, -131070, 4, 0, -131069, 4, 0, -131068, 4, 0, -131067, 4, 0, -131066, 4, 0, -131065, 4, 0, -131064, 4, 0, -131063, 4, 0, -131062, 4, 0, -131061, 4, 0, -131060, 4, 0, -131059, 4, 0, -131058, 4, 0, -131057, 4, 0, -131056, 4, 0, -131055, 4, 0, -131054, 4, 0, -131053, 4, 0, -131052, 4, 0, -131051, 4, 0, -131050, 4, 0, -131049, 4, 0, -131048, 4, 0, -131047, 4, 0, -131046, 4, 0, -131045, 4, 0, -131044, 4, 0, -131043, 4, 0, -131042, 4, 0, -131041, 4, 0, -131040, 4, 0, -131039, 4, 0, -131038, 4, 0, -131037, 4, 0, -131036, 4, 0, -131035, 4, 0, -131034, 4, 0, -131033, 4, 0, -131032, 4, 0, -131031, 4, 0, -131030, 4, 0, -131029, 4, 0, -131028, 4, 0, -131027, 4, 0, -131026, 4, 0, -131025, 4, 0, -131024, 4, 0, -131023, 4, 0, -131022, 4, 0, -131021, 4, 0, -131020, 4, 0, -131019, 4, 0, -131018, 4, 0, -131017, 4, 0, -131016, 4, 0, -131015, 4, 0, -131014, 4, 0, -131013, 4, 0, -131012, 4, 0, -131011, 4, 0, -131010, 4, 0, -131009, 4, 0, -131008, 4, 0, -131007, 4, 0, -131006, 4, 0, -131005, 4, 0, -131004, 4, 0, -131003, 4, 0, -131002, 4, 0, -2, 4, 0, -1, 4, 0, -65536, 15, 0, -65535, 7, 0, -65534, 7, 0, -65533, 7, 0, -65532, 7, 0, -65531, 7, 0, -65530, 7, 0, -65529, 7, 0, -65528, 7, 0, -65527, 7, 0, -65526, 7, 0, -65525, 7, 0, -65524, 7, 0, -65523, 7, 0, -65522, 7, 0, -65521, 7, 0, -65520, 7, 0, -65519, 7, 0, -65518, 7, 0, -65517, 7, 0, -65516, 7, 0, -65515, 7, 0, -65514, 7, 0, -65513, 7, 0, -65512, 7, 0, -65511, 7, 0, -65510, 7, 0, -65509, 7, 0, -65508, 7, 0, -65507, 7, 0, -65506, 7, 0, -65505, 7, 0, -65504, 7, 0, -65503, 7, 0, -65502, 7, 0, -65501, 7, 0, -65500, 7, 0, -65499, 7, 0, -65498, 7, 0, -65497, 7, 0, -65496, 7, 0, -65495, 7, 0, -65494, 7, 0, -65493, 7, 0, -65492, 7, 0, -65491, 7, 0, -65490, 7, 0, -65489, 7, 0, -65488, 7, 0, -65487, 7, 0, -65486, 7, 0, -65485, 7, 0, -65484, 7, 0, -65483, 7, 0, -65482, 7, 0, -65481, 7, 0, -65480, 7, 0, -65479, 7, 0, -65478, 7, 0, -65477, 7, 0, -65476, 7, 0, -65475, 7, 0, -65474, 7, 0, -65473, 7, 0, -65472, 7, 0, -65471, 7, 0, -65470, 7, 0, -65469, 7, 0, -65468, 7, 0, -65467, 16, 0, -65466, 4, 0, 65534, 4, 0, 65535, 4, 0, 0, 5, 0, 69, 3, 0, 70, 4, 0, 131070, 4, 0, 131071, 4, 0, 65536, 5, 0, 65605, 3, 0, 65606, 4, 0, 196606, 4, 0, 196607, 4, 0, 131072, 5, 0, 131091, 34, 0, 131141, 3, 0, 131142, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 5, 0, 196614, 9, 0, 196638, 9, 0, 196641, 34, 0, 196649, 12, 0, 196650, 13, 0, 196651, 14, 0, 196657, 12, 0, 196658, 13, 0, 196659, 13, 0, 196660, 14, 0, 196670, 12, 0, 196671, 14, 0, 196677, 3, 0, 196678, 4, 0, 327678, 4, 0, 327679, 4, 0, 262144, 5, 0, 262150, 11, 0, 262153, 9, 0, 262169, 12, 0, 262170, 13, 0, 262171, 14, 0, 262174, 11, 0, 262190, 40, 0, 262210, 12, 0, 262211, 13, 0, 262212, 13, 0, 262213, 3, 0, 262214, 4, 0, 393214, 4, 0, 393215, 4, 0, 327680, 5, 0, 327681, 13, 0, 327682, 13, 0, 327683, 14, 0, 327689, 10, 0, 327697, 12, 0, 327698, 13, 0, 327699, 13, 0, 327700, 14, 0, 327703, 34, 0, 327726, 10, 0, 327735, 12, 0, 327736, 13, 0, 327737, 13, 0, 327738, 14, 0, 327740, 34, 0, 327749, 3, 0, 327750, 4, 0, 458750, 4, 0, 458751, 4, 0, 393216, 5, 0, 393225, 11, 0, 393262, 11, 0, 393285, 3, 0, 393286, 4, 0, 524286, 4, 0, 524287, 4, 0, 458752, 5, 0, 458821, 3, 0, 458822, 4, 0, 589822, 4, 0, 589823, 4, 0, 524288, 5, 0, 524357, 3, 0, 524358, 4, 0, 655358, 4, 0, 655359, 4, 0, 589824, 5, 0, 589893, 3, 0, 589894, 4, 0, 720894, 4, 0, 720895, 4, 0, 655360, 5, 0 )
+
+[node name="Hero" type="KinematicBody2D" parent="."]
+position = Vector2( 92, 96 )
+collision_mask = 30
+script = ExtResource( 60 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Hero"]
+frames = SubResource( 1 )
+animation = "Mati"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hero"]
+position = Vector2( 0, 2 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Hero"]
+current = true
+limit_left = 0
+limit_top = -37
+limit_right = 2236
+limit_bottom = 280
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.3
+drag_margin_top = 0.4
+drag_margin_right = 0.3
+drag_margin_bottom = 0.4
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="Timer" type="Timer" parent="Hero"]
+wait_time = 0.2
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Hero"]
+stream = ExtResource( 47 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Hero"]
+stream = ExtResource( 48 )
+volume_db = 7.505
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Hero"]
+stream = ExtResource( 51 )
+
+[node name="ZonaJatuh" type="Area2D" parent="."]
+position = Vector2( 1115.12, 306.287 )
+collision_layer = 16
+collision_mask = 5
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaJatuh"]
+shape = SubResource( 3 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Langit" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+motion_offset = Vector2( 0, -140 )
+motion_mirroring = Vector2( 384, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Langit"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 24 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/Langit"]
+scale = Vector2( 12, 4 )
+texture = ExtResource( 25 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/Langit"]
+position = Vector2( 0, 256 )
+scale = Vector2( 12, 2.75 )
+texture = ExtResource( 26 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AwanBesar" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0.5 )
+motion_offset = Vector2( 0, -100 )
+motion_mirroring = Vector2( 448, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/AwanBesar"]
+modulate = Color( 1, 1, 1, 0.462745 )
+position = Vector2( 0, 96 )
+texture = ExtResource( 27 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AwanKecil" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.7, 0.7 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 280, 48 )
+texture = ExtResource( 28 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 48, 64 )
+texture = ExtResource( 28 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 472, 88 )
+texture = ExtResource( 28 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 704, 64 )
+texture = ExtResource( 28 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TempatKoin" type="Node2D" parent="."]
+
+[node name="Koin" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 305.398, 110.001 )
+
+[node name="Koin4" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 559.989, 53.7698 )
+
+[node name="Koin5" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 562.259, 88.2568 )
+
+[node name="Koin6" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 563.934, 121.555 )
+
+[node name="Koin27" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1598.48, 78.8197 )
+
+[node name="Koin37" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1598.48, 78.8197 )
+
+[node name="Koin28" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1630.48, 78.8197 )
+
+[node name="Koin29" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1662.48, 78.8197 )
+
+[node name="Koin35" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 2135.62, 116.237 )
+
+[node name="Koin36" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 2134.65, 93.965 )
+
+[node name="Koin30" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1869.31, 132.274 )
+
+[node name="Koin31" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1902.2, 112.674 )
+
+[node name="Koin32" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1927.96, 126.928 )
+
+[node name="Koin33" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 2015.27, 78.8197 )
+
+[node name="Koin34" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 2015.27, 56.5472 )
+
+[node name="Koin7" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 406.871, 46.4126 )
+
+[node name="Koin8" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 430.871, 46.4126 )
+
+[node name="Koin9" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 454.871, 46.4126 )
+
+[node name="Koin10" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 831.313, 112.835 )
+
+[node name="Koin11" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 863.313, 112.835 )
+
+[node name="Koin12" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 847.313, 88.8347 )
+
+[node name="Koin13" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 831.313, 64.8347 )
+
+[node name="Koin14" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 863.313, 64.8347 )
+
+[node name="Koin15" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 751.625, 126.521 )
+
+[node name="Koin16" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 751.625, 102.521 )
+
+[node name="Koin17" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 751.625, 78.5213 )
+
+[node name="Koin18" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1764.74, 119.58 )
+
+[node name="Koin19" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1736.29, 97.3076 )
+
+[node name="Koin20" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1703.38, 78.5987 )
+
+[node name="Koin24" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1482.31, 108.15 )
+
+[node name="Koin25" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1454.69, 74.9455 )
+
+[node name="Koin26" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1405.81, 71.3727 )
+
+[node name="Koin21" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1253.02, 130.374 )
+
+[node name="Koin22" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1280.65, 101.874 )
+
+[node name="Koin23" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 1309.5, 77.7008 )
+
+[node name="Koin2" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 305.253, 64.5653 )
+
+[node name="Koin3" parent="TempatKoin" groups=[
+"GrupKoin",
+] instance=ExtResource( 29 )]
+position = Vector2( 306.072, 85.056 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthBar" type="Control" parent="CanvasLayer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 77.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HealthBar"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HealthBar/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 40.0
+texture = ExtResource( 31 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HealthBar/HBoxContainer"]
+margin_left = 32.0
+margin_right = 64.0
+margin_bottom = 40.0
+texture = ExtResource( 32 )
+
+[node name="TextureProgress" type="TextureProgress" parent="CanvasLayer/HealthBar"]
+margin_left = 17.0
+margin_top = 14.0
+margin_right = 60.0
+margin_bottom = 16.0
+value = 100.0
+texture_progress = ExtResource( 33 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoinBar" type="Control" parent="CanvasLayer"]
+margin_left = 256.0
+margin_top = 8.0
+margin_right = 320.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CoinBar"]
+margin_right = 64.0
+margin_bottom = 32.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CoinBar/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 39 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/CoinBar/HBoxContainer"]
+margin_left = 32.0
+margin_right = 64.0
+margin_bottom = 32.0
+texture = ExtResource( 40 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CoinBar"]
+margin_left = 18.0
+margin_top = 6.0
+margin_right = 34.0
+margin_bottom = 22.0
+texture = ExtResource( 38 )
+
+[node name="Label" type="Label" parent="CanvasLayer/CoinBar"]
+margin_left = 34.0
+margin_top = 10.0
+margin_right = 60.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PopupKalah" type="CenterContainer" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -250.0
+margin_right = 64.0
+margin_bottom = -122.0
+script = ExtResource( 58 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PopupKalah"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 43 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/PopupKalah"]
+stream = ExtResource( 49 )
+volume_db = 4.289
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PopupKalah"]
+margin_left = 33.0
+margin_top = 24.0
+margin_right = 95.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="CanvasLayer/PopupKalah/VBoxContainer"]
+margin_right = 62.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 5 )
+text = "Yah, Kalah!"
+
+[node name="TmblUlangi" type="Button" parent="CanvasLayer/PopupKalah/VBoxContainer"]
+margin_top = 24.0
+margin_right = 62.0
+margin_bottom = 50.9678
+custom_styles/hover = ExtResource( 42 )
+custom_styles/pressed = ExtResource( 42 )
+custom_styles/focus = ExtResource( 42 )
+custom_styles/disabled = ExtResource( 42 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 44 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Ulangi"
+
+[node name="TmblKeluar" type="Button" parent="CanvasLayer/PopupKalah/VBoxContainer"]
+margin_top = 54.0
+margin_right = 62.0
+margin_bottom = 80.9678
+custom_styles/hover = ExtResource( 42 )
+custom_styles/pressed = ExtResource( 42 )
+custom_styles/focus = ExtResource( 42 )
+custom_styles/disabled = ExtResource( 42 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 44 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Keluar"
+
+[node name="Tween" type="Tween" parent="CanvasLayer/PopupKalah"]
+
+[node name="PopupMenang" type="CenterContainer" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -250.0
+margin_right = 64.0
+margin_bottom = -122.0
+script = ExtResource( 61 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PopupMenang"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 43 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/PopupMenang"]
+stream = ExtResource( 50 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PopupMenang"]
+margin_left = 27.0
+margin_top = 37.0
+margin_right = 101.0
+margin_bottom = 91.0
+custom_constants/separation = 8
+
+[node name="Label" type="Label" parent="CanvasLayer/PopupMenang/VBoxContainer"]
+margin_right = 74.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 5 )
+text = "Yay, Menang!"
+
+[node name="TmblKeluar" type="Button" parent="CanvasLayer/PopupMenang/VBoxContainer"]
+margin_top = 28.0
+margin_right = 74.0
+margin_bottom = 54.9678
+custom_styles/hover = ExtResource( 42 )
+custom_styles/pressed = ExtResource( 42 )
+custom_styles/focus = ExtResource( 42 )
+custom_styles/disabled = ExtResource( 42 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 44 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Selanjutnya"
+
+[node name="Tween" type="Tween" parent="CanvasLayer/PopupMenang"]
+
+[node name="PopupPause" type="CenterContainer" parent="CanvasLayer"]
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -63.66
+margin_top = -249.345
+margin_right = 64.34
+margin_bottom = -121.345
+script = ExtResource( 62 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PopupPause"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 43 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/PopupPause"]
+stream = ExtResource( 49 )
+volume_db = 4.289
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PopupPause"]
+margin_left = 23.0
+margin_top = 24.0
+margin_right = 104.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="CanvasLayer/PopupPause/VBoxContainer"]
+margin_right = 81.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 6 )
+text = "Game Paused!"
+
+[node name="TmblUlangi" type="Button" parent="CanvasLayer/PopupPause/VBoxContainer"]
+margin_top = 24.0
+margin_right = 81.0
+margin_bottom = 50.9678
+custom_styles/hover = ExtResource( 42 )
+custom_styles/pressed = ExtResource( 42 )
+custom_styles/focus = ExtResource( 42 )
+custom_styles/disabled = ExtResource( 42 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 44 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Lanjutkan"
+
+[node name="TmblKeluar" type="Button" parent="CanvasLayer/PopupPause/VBoxContainer"]
+margin_top = 54.0
+margin_right = 81.0
+margin_bottom = 80.9678
+custom_styles/hover = ExtResource( 42 )
+custom_styles/pressed = ExtResource( 42 )
+custom_styles/focus = ExtResource( 42 )
+custom_styles/disabled = ExtResource( 42 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 44 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Keluar"
+
+[node name="Tween" type="Tween" parent="CanvasLayer/PopupPause"]
+
+[node name="GrupMusuh" type="Node2D" parent="."]
+
+[node name="Musuh3" parent="GrupMusuh" instance=ExtResource( 30 )]
+position = Vector2( 1630.62, 42.3187 )
+arah = -1
+
+[node name="Musuh2" parent="GrupMusuh" instance=ExtResource( 30 )]
+position = Vector2( 848.149, 69.7348 )
+arah = -1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GrupMusuh"]
+stream = ExtResource( 52 )
+
+[node name="Meriam" type="KinematicBody2D" parent="."]
+position = Vector2( 623.046, 51.7429 )
+collision_layer = 4
+script = ExtResource( 57 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Meriam"]
+texture = ExtResource( 55 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Meriam"]
+position = Vector2( 0, 2 )
+shape = SubResource( 7 )
+
+[node name="Position2D" type="Position2D" parent="Meriam"]
+position = Vector2( -15, -2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Meriam"]
+anims/Diam = SubResource( 8 )
+anims/Tembak = SubResource( 9 )
+
+[node name="AnimationTree" type="AnimationTree" parent="Meriam"]
+tree_root = SubResource( 14 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 15 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Meriam"]
+enabled = true
+cast_to = Vector2( -120, 0 )
+collision_mask = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Meriam"]
+stream = ExtResource( 54 )
+
+[node name="Meriam2" type="KinematicBody2D" parent="."]
+position = Vector2( 751.767, 147.223 )
+collision_layer = 4
+script = ExtResource( 57 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Meriam2"]
+texture = ExtResource( 55 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Meriam2"]
+position = Vector2( 0, 2 )
+shape = SubResource( 7 )
+
+[node name="Position2D" type="Position2D" parent="Meriam2"]
+position = Vector2( -15, -2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Meriam2"]
+anims/Diam = SubResource( 16 )
+anims/Tembak = SubResource( 17 )
+
+[node name="AnimationTree" type="AnimationTree" parent="Meriam2"]
+tree_root = SubResource( 14 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 18 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Meriam2"]
+enabled = true
+cast_to = Vector2( -120, 0 )
+collision_mask = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Meriam2"]
+stream = ExtResource( 54 )
+
+[node name="Meriam3" type="KinematicBody2D" parent="."]
+position = Vector2( 1071.09, 83.7886 )
+collision_layer = 4
+script = ExtResource( 57 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Meriam3"]
+texture = ExtResource( 55 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Meriam3"]
+position = Vector2( 0, 2 )
+shape = SubResource( 7 )
+
+[node name="Position2D" type="Position2D" parent="Meriam3"]
+position = Vector2( -15, -2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Meriam3"]
+anims/Diam = SubResource( 19 )
+anims/Tembak = SubResource( 20 )
+
+[node name="AnimationTree" type="AnimationTree" parent="Meriam3"]
+tree_root = SubResource( 14 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 21 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Meriam3"]
+enabled = true
+cast_to = Vector2( -120, 0 )
+collision_mask = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Meriam3"]
+stream = ExtResource( 54 )
+
+[node name="Meriam4" type="KinematicBody2D" parent="."]
+position = Vector2( 1935.2, 147.715 )
+collision_layer = 4
+script = ExtResource( 57 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Meriam4"]
+texture = ExtResource( 55 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Meriam4"]
+position = Vector2( 0, 2 )
+shape = SubResource( 7 )
+
+[node name="Position2D" type="Position2D" parent="Meriam4"]
+position = Vector2( -15, -2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Meriam4"]
+anims/Diam = SubResource( 22 )
+anims/Tembak = SubResource( 23 )
+
+[node name="AnimationTree" type="AnimationTree" parent="Meriam4"]
+tree_root = SubResource( 14 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 24 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Meriam4"]
+enabled = true
+cast_to = Vector2( -120, 0 )
+collision_mask = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Meriam4"]
+stream = ExtResource( 54 )
+
+[node name="PlatformAnimasi" type="RigidBody2D" parent="."]
+position = Vector2( 485.172, 78.369 )
+collision_layer = 2
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="PlatformAnimasi"]
+position = Vector2( -47.5595, -15.1905 )
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 12, 0, 1, 13, 0, 2, 14, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformAnimasi"]
+shape = SubResource( 25 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlatformAnimasi"]
+autoplay = "Moving"
+anims/Moving = SubResource( 26 )
+
+[node name="PlatformAnimasi2" type="RigidBody2D" parent="."]
+position = Vector2( 1198.81, 178.936 )
+collision_layer = 2
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="PlatformAnimasi2"]
+position = Vector2( -47.5595, -15.1905 )
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 12, 0, 1, 13, 0, 2, 14, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformAnimasi2"]
+shape = SubResource( 25 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlatformAnimasi2"]
+autoplay = "Moving2"
+anims/Moving = SubResource( 27 )
+anims/Moving2 = SubResource( 28 )
+[connection signal="hero_apdet_health" from="Hero" to="." method="_on_Hero_hero_apdet_health"]
+[connection signal="hero_apdet_koin" from="Hero" to="." method="_on_Hero_hero_apdet_koin"]
+[connection signal="hero_mati" from="Hero" to="CanvasLayer/PopupKalah" method="_on_Hero_hero_mati"]
+[connection signal="hero_menang" from="Hero" to="CanvasLayer/PopupMenang" method="_on_Hero_hero_menang"]
+[connection signal="timeout" from="Hero/Timer" to="Hero" method="_on_Timer_timeout"]
+[connection signal="body_entered" from="ZonaJatuh" to="." method="_on_ZonaJatuh_body_entered"]
+[connection signal="pressed" from="CanvasLayer/PopupKalah/VBoxContainer/TmblUlangi" to="CanvasLayer/PopupKalah" method="_on_TmblUlangi_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupKalah/VBoxContainer/TmblKeluar" to="CanvasLayer/PopupKalah" method="_on_TmblKeluar_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupMenang/VBoxContainer/TmblKeluar" to="CanvasLayer/PopupMenang" method="_on_TmblKeluar_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupPause/VBoxContainer/TmblUlangi" to="CanvasLayer/PopupPause" method="_on_TmblUlangi_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupPause/VBoxContainer/TmblKeluar" to="CanvasLayer/PopupPause" method="_on_TmblKeluar_pressed"]

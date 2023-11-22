@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://level/level1/TilesetTembus.tres" type="TileSet" id=1]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( -27.3724, -33.9796, 27.3724, 33.9796, 248, 64, 54.7449, 0, -54.7449, 0, 176, 160, -27.3724, 43.4183, 27.3724, -43.4183, 174.317, 115.163, -31.1479, -36.8112, 31.1479, 36.8112, 248, 64 )
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 48.4405, 15.1905 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "move"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="Path2D" type="Path2D"]
+position = Vector2( 16, 32 )
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2( 248, 64 )
+rotation = 1.94933e-06
+rotate = false
+cubic_interp = false
+
+[node name="PlatformKode" type="RigidBody2D" parent="PathFollow2D"]
+rotation = -1.94933e-06
+collision_layer = 2
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap2" type="TileMap" parent="PathFollow2D/PlatformKode"]
+position = Vector2( -48, -16 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 12, 0, 1, 13, 0, 2, 14, 0 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PathFollow2D/PlatformKode"]
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "move"
+anims/move = SubResource( 3 )

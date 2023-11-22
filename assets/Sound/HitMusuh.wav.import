@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/HitMusuh.wav-f690cbe263c53fb36c5cbba8763e9c4e.sample"
+
+[deps]
+
+source_file="res://assets/Sound/HitMusuh.wav"
+dest_files=[ "res://.import/HitMusuh.wav-f690cbe263c53fb36c5cbba8763e9c4e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
